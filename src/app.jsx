@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection';
 import Minter from './components/Minter';
 import Roadmap from './components/Roadmap';
 import Team from './components/Team';
+import FaqSection from './components/FaqSection';
 
 export function App(props) {
   return (
@@ -13,6 +14,7 @@ export function App(props) {
       <Minter />
       <Roadmap />
       <Team />
+      <FaqSection />
     </div>
   )
 }
