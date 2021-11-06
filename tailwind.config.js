@@ -7,7 +7,9 @@ module.exports = {
   theme: {
     textColor: {
       'primary': '#FF2D60',
-      'secondary': '#ffffff'
+      'secondary': '#ffffff',
+      'discord': '#7289DA',
+      'twitter': '#1DA1F2'
     },
     extend: {
       fontFamily: {

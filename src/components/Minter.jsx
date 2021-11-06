@@ -11,7 +11,7 @@ function Minter() {
                 <div className="text-center p-5 xl:py-16 lg:py-14 mx-10 md:mx-0 xl:w-3/6 order-1 md:order-none rounded-lg my-auto">
                     <h1 id="heading" className="font-Modak text-5xl text-secondary">Minter!</h1>
                     <h3 className="text-lg">Enter the amount of ShibainuX you want to mint! (5 max)</h3>
-                    <input type="number" name="mintValue" placeholder="Enter the amount" className="p-2 my-5 rounded-md"/>
+                    <input type="number" max="5" name="mintValue" placeholder="Enter the amount" className="p-2 my-5 rounded-md outline-none"/>
                     <div className="inline-flex xl:mx-5">
                         <button type="submit" className="bg-pink-500 border-2 mr-7 border-black p-3 rounded-md">Connect Wallet</button>
                         <button type="submit" className="bg-pink-500 border-2 border-black p-3 px-12 rounded-md">Mint!</button> 

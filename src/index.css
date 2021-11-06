@@ -34,16 +34,26 @@ details[open] summary ~ *{
         opacity: 1;
     }
 }
-details summary:after{
-    content: "+";
-    font-weight: 500;
-    float: right;
-    font-size: 1.75rem;
-    line-height: .8;
+summary section{
     transform-origin: center;
     transition: 200ms linear;
 }
-details[open] summary:after{
+details[open] summary section{
     transform: rotate(45deg);
-    font-size: 1.8rem;
+    font-size: 2rem;
+}
+
+#scrollDown{
+    animation: bounce 2s ease-in-out infinite;
+}
+@keyframes bounce {
+    0%{
+        margin-top: -.5%;
+    }
+    50%{
+        margin-top: 4%;
+    }
+    100%{
+        margin-top: -.5%;
+    }
 }
