@@ -4,8 +4,8 @@ import Image8 from '../images/8.png'
 
 function Team() {
     return (
-        <div className="mt-10">
-            <h1 id="heading" className="font-Modak text-5xl text-secondary text-center">Team</h1>
+        <div id="team" className="mt-10">
+            <h1 id="heading" className="font-Modak text-4xl md:text-5xl text-secondary text-center">Team</h1>
             <div className="flex flex-col md:flex-row justify-center align-middle">
                 <Members img={Image7} name="Drake" work="@Artist/Leader"/>
                 <Members img={Image8} name="Sahil1020" work="@Dev/Manager"/>

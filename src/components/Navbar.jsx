@@ -1,17 +1,43 @@
-import React from 'react';
+import React, { useState } from "react";
 
 function Navbar() {
-    return (
-        <div className="flex align-middle justify-between bg-gray-800 text-gray-50 h-auto w-full p-5">
-            <div className="border border-gray-200">
-                <img src="" alt="logo.png"/>  
-            </div>
-            <div className="border border-gray-200">
-                <h1>jjjj</h1>
-            </div>
+  const [isOpen, setIsOpen] = useState(false);
 
+  function handleClick() {
+    setIsOpen(!isOpen);
+  }
+
+  return (
+      <nav className="fixed top-0 left-0 right-0 w-screen bg-gray-700 px-8 py-4 border-b-2 border-pink-500 text-secondary">
+        <div className="flex items-center justify-between mx-auto">
+        <h1 className="text-xl">Shiba Days</h1>
+
+          <div id="navList" className="hidden lg:flex">
+              <button><a href="#about" className="">About</a></button>
+              <button><a href="#about" className="">Minter</a></button>
+              <button><a href="#roadmap" className="">Roadmap</a></button>
+              <button><a href="#team" className="">Team</a></button>
+              <button><a className="">Connect Wallet</a></button>
+          </div>
+
+          <button id="hamburger" type="button" className={`block lg:hidden relative cursor-pointer mr-2 outline-none border-none ${ isOpen ? "app" : null }`} onClick={handleClick} >
+            <span className="block w-8 h-1 bg-gray-100 rounded-md"></span>
+            <span className="block w-8 h-1 my-2 bg-gray-100 rounded-md"></span>
+            <span className="block w-8 h-1 bg-gray-100 rounded-md"></span>
+          </button>
         </div>
-    );
+
+          <div id="navList2" className={`flex-col mt-7 py-8 text-center mr-3 ${ isOpen ? "flex" : "hidden" }`}>
+              <a href="#about" className="py-2 hover:bg-yellow-200">About</a>
+              <a href="#about" className="py-2 hover:bg-yellow-200">Minter</a>
+              <a href="#roadmap" className="py-2 hover:bg-yellow-200">Roadmap</a>
+              <a href="#team" className="py-2 hover:bg-yellow-200">Team</a>
+              <a href="" className="py-2 hover:bg-yellow-200">Connect Wallet</a>
+          </div>
+        
+        
+      </nav>
+  )
 }
 
 export default Navbar;

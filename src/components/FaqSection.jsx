@@ -21,7 +21,7 @@ function FaqSection() {
 
     return (
         <div className="flex flex-col bg-yellow-400 w-full mt-5">
-            <h1 id="heading" className="font-Modak text-5xl text-secondary self-center mt-5">Faq</h1>
+            <h1 id="heading" className="font-Modak text-4xl md:text-5xl text-secondary self-center mt-5">Faq</h1>
             <div className="flex flex-col md:flex-row-reverse justify-evenly">
                 
                 <img src={Image9} alt="" className="h-44 md:h-52 lg:h-56 xl:h-72 2xl:h-80 m-auto md:mr-14 lg:mr-20 xl:mr-28 2xl:mr-40"/>

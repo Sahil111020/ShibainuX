@@ -4,8 +4,8 @@ import Image5 from '../images/5.png'
 
 function Roadmap() {
     return (
-        <div className="p-12 xl:px-48 bg-blue-400 text-center">
-            <h1 id="heading" className="font-Modak text-5xl text-secondary -mt-3 mb-5">Road map</h1>
+        <div id="roadmap" className="p-12 xl:px-48 bg-blue-400 text-center">
+            <h1 id="heading" className="font-Modak text-4xl md:text-5xl text-secondary -mt-3 mb-5">Road map</h1>
 
             <div className="flex flex-col-reverse md:flex-col text-left">
                 <div className="flex flex-col md:flex-row align-middle justify-center gap-5">
