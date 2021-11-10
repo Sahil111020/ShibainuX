@@ -13,10 +13,10 @@ function Navbar() {
         <h1 className="text-xl">Shiba Days</h1>
 
           <div id="navList" className="hidden lg:flex">
-              <button><a href="#about" className="">About</a></button>
-              <button><a href="#about" className="">Minter</a></button>
-              <button><a href="#roadmap" className="">Roadmap</a></button>
-              <button><a href="#team" className="">Team</a></button>
+              <button><a className="">About</a></button>
+              <button><a className="">Minter</a></button>
+              <button><a className="">Roadmap</a></button>
+              <button><a className="">Team</a></button>
               <button><a className="">Connect Wallet</a></button>
           </div>
 
@@ -28,11 +28,11 @@ function Navbar() {
         </div>
 
           <div id="navList2" className={`flex-col mt-7 py-8 text-center mr-3 ${ isOpen ? "flex" : "hidden" }`}>
-              <a href="#about" className="py-2 hover:bg-yellow-200">About</a>
-              <a href="#about" className="py-2 hover:bg-yellow-200">Minter</a>
-              <a href="#roadmap" className="py-2 hover:bg-yellow-200">Roadmap</a>
-              <a href="#team" className="py-2 hover:bg-yellow-200">Team</a>
-              <a href="" className="py-2 hover:bg-yellow-200">Connect Wallet</a>
+              <a className="py-2 hover:bg-yellow-200">About</a>
+              <a className="py-2 hover:bg-yellow-200">Minter</a>
+              <a className="py-2 hover:bg-yellow-200">Roadmap</a>
+              <a className="py-2 hover:bg-yellow-200">Team</a>
+              <a className="py-2 hover:bg-yellow-200">Connect Wallet</a>
           </div>
         
         
