@@ -9,7 +9,7 @@ function Navbar() {
 
   return (
       <nav className="fixed top-0 left-0 right-0 w-screen bg-gray-700 px-8 py-4 border-b-2 border-pink-500 text-secondary">
-        <div className="flex items-center justify-between mx-auto my-3">
+        <div className="flex items-center justify-between mx-auto md:my-3">
         <h1 className="text-xl">Shiba Days</h1>
 
           <div id="navList" className="hidden lg:flex">

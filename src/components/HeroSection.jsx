@@ -13,7 +13,7 @@ function HeroSection() {
             <img src={Image1} alt="" className="h-44 md:h-52 lg:h-56 xl:h-72 2xl:h-80 m-auto"/>
             
             <div className="bg-red-300 text-center p-5 xl:py-16 lg:py-14 mx-10 md:mx-0 lg:w-11/12 xl:w-5/6 order-3 md:order-none border-4 border-black rounded-lg my-auto">
-                <h1 id="heading" className="font-Modak text-4xl md:text-5xl text-shadow text-primary lg:text-twitter px-5">SHIBA DAYS</h1>
+                <h1 id="heading" className="font-Modak text-4xl md:text-5xl text-shadow text-primary px-5">SHIBA DAYS</h1>
                 <h3 className="pt-3 text-lg mb-5">The Shiba Days Society are unique metaverse, taking on a Shiba Inu outlook who inhabit the remote modern land of Ethernum. Each Shiba Day is one-of-a-kind with their own personality and drawn from distinct traits. As a member of the Society, you will have exclusive access to our new upcoming NFT, and having the privileges' to join the exclusive club of Shiba Days future expansion</h3>
                 
                 <div className="flex items-center justify-center opacity-70 md:hidden">
