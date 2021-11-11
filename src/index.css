@@ -65,12 +65,9 @@ h1, h2, h3, h4{
     border-radius: 7px;
     cursor: pointer;
 }
+ 
 
-
-details > summary {
-    font-size: 24px;
-}
-details[open] summary ~ *{
+details[open] svg ~ *{
     animation: openanimate 0.4s ease-in-out;
 }
 @keyframes openanimate {
@@ -81,11 +78,11 @@ details[open] summary ~ *{
         opacity: 1;
     }
 }
-summary section{
+summary svg{
     transform-origin: center;
     transition: 200ms linear;
 }
-details[open] summary section{
+details[open] summary svg{
     transform: rotate(45deg);
     font-size: 2rem;
 }
