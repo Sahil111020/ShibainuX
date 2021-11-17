@@ -1,103 +1,108 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Modak&family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Modak&family=Poppins&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
-body{
-    font-family:'Poppins', 'sans-serif';
-    scroll-behavior: smooth;
+body {
+  font-family: "Poppins", "sans-serif";
+  scroll-behavior: smooth;
+  background-color: #fff59e;
 }
-h1, h2, h3, h4{
-    cursor: default;
+h1,
+h2,
+h3,
+h4 {
+  cursor: default;
 }
-#heading{
-    -webkit-text-stroke: 3px black;
+#heading {
+  -webkit-text-stroke: 3px black;
 }
-#heading2{
-    -webkit-text-stroke: 1.5px black;
+#heading2 {
+  -webkit-text-stroke: 1.5px black;
 }
-#hamburger{
-    user-select: none;
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
+#hamburger {
+  user-select: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
 }
-#hamburger span{
-    transform-origin: -50 -50;
-    transition: .4s;
+#hamburger span {
+  transform-origin: -50 -50;
+  transition: 0.4s;
+  background-color: whitesmoke;
 }
-#hamburger.app span:nth-child(1){
-    transform: translateY(12px) rotate(135deg);
+#hamburger.app span:nth-child(1) {
+  transform: translateY(12px) rotate(135deg);
 }
-#hamburger.app span:nth-child(2){
-    transform: scale(0);
+#hamburger.app span:nth-child(2) {
+  transform: scale(0);
 }
-#hamburger.app span:nth-child(3){
-    transform: translateY(-12px) rotate(-135deg);
+#hamburger.app span:nth-child(3) {
+  transform: translateY(-12px) rotate(-135deg);
 }
-#hamburger.app span{
-    background-color: coral;
-}
-
-#navList a{
-    margin: 0 14px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: .4s;
-    padding: 8px 16px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-#navList a.app, #navList a:hover {
-    background-color: coral;
+#hamburger.app span {
+  background-color: #ff2d60;
 }
 
-#navList2.flex a{
-    text-decoration: none;
-    transition: .4s ease-in-out;
-    border-radius: 7px;
-    cursor: pointer;
+#navList a {
+  margin: 0 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
 }
- 
+#navList a.app,
+#navList a:hover {
+  background-color: #ff2d60;
+}
 
-details[open] svg ~ *{
-    animation: openanimate 0.4s ease-in-out;
+#navList2.flex a {
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+details[open] svg ~ * {
+  animation: openanimate 0.4s ease-in-out;
 }
 @keyframes openanimate {
-    0% {
-        opacity: 0;
-    };
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-summary svg{
-    transform-origin: center;
-    transition: 200ms linear;
+summary svg {
+  transform-origin: center;
+  transition: 200ms linear;
 }
-details[open] summary svg{
-    transform: rotate(45deg);
-    font-size: 2rem;
+details[open] summary svg {
+  transform: rotate(45deg);
+  font-size: 2rem;
 }
 
-#scrollDown{
-    animation: bounce 2s ease-in-out infinite;
+#scrollDown {
+  animation: bounce 2s ease-in-out infinite;
 }
 @keyframes bounce {
-    0%{
-        margin-top: -.5%;
-    }
-    50%{
-        margin-top: 4%;
-    }
-    100%{
-        margin-top: -.5%;
-    }
+  0% {
+    margin-top: -0.5%;
+  }
+  50% {
+    margin-top: 4%;
+  }
+  100% {
+    margin-top: -0.5%;
+  }
 }

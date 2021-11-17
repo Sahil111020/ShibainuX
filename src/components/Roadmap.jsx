@@ -4,7 +4,7 @@ import Image5 from '../images/5.png'
 
 function Roadmap() {
     return (
-        <div id="roadmap" className="p-12 xl:px-48 bg-blue-400 text-center">
+        <div id="roadmap" className="p-12 xl:px-48 bg-bg3 text-center">
             <h1 id="heading" className="font-Modak text-4xl md:text-5xl text-secondary -mt-3 mb-5">Road map</h1>
 
             <div className="flex flex-col-reverse md:flex-col text-left">
@@ -26,7 +26,7 @@ function Roadmap() {
 
 function MapCards(props) {
     return (
-        <div className="p-10 border-4 border-black bg-red-400 rounded-lg text-base">
+        <div className="p-10 border-4 border-black bg-bg31 shadow-lg rounded-lg text-base">
             <h1 id="heading2" className="font-Modak text-2xl text-secondary">{props.title}</h1>
             <h3>{props.line1}</h3>
             <h3>{props.line2}</h3>

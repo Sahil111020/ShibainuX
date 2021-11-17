@@ -12,7 +12,8 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
-    "preact": "^10.5.13"
+    "preact": "^10.5.13",
+    "react-scroll": "^1.8.4"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.0.0",
