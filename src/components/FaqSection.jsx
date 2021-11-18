@@ -18,7 +18,6 @@ function FaqSection() {
         })
     })
     }
-
     return (
         <div className="flex flex-col bg-bg5 w-full mt-5">
             <h1 id="heading" className="font-Modak text-4xl md:text-5xl text-secondary self-center mt-5">Faq</h1>
